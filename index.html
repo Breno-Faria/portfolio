@@ -54,6 +54,22 @@
         :target {
             scroll-margin-top: 90px;
         }
+
+        #nav_bar {
+            position: sticky;
+            top: 0;
+            background-color:#48536B;
+            border-radius: 1rem;
+            padding:0rem 3rem;
+            margin:2rem;
+            z-index: 2;
+            opacity: 0.9;
+        }
+        @media (max-width: 768px) {
+            #nav_bar {
+                display: none;
+            }
+        }
     </style>
 
     <script>
@@ -70,9 +86,9 @@
     </script>
 </head>
 <body>
-    <nav style="position: sticky;top: 0; background-color:#48536B;border-radius: 1rem;padding:0rem 2rem; margin:2rem;" id="nav_bar">
+    <nav id="nav_bar">
         <ul>
-            <li><a href="#"><img src="./assets/img/monogram-test.png" style="max-width: 8rem;"></a></li>
+            <li><a href="#"><img src="./assets/img/monogram-test.png" style="max-width: 4rem;"></a></li>
 
         </ul>
         <ul>
