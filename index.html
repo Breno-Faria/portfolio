@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    <style>
+        .timeline-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 5px;
+            border-radius: 10px;
+            background-color: gray;
+            flex-grow: 1;
+        }
+
+        .year-marker {
+            position: absolute;
+            left: -25px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: white;
+            background-color: gray;
+            padding: 2px 6px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .year-2025 { top: 0%; }
+        .year-2024 { top: 15%; }
+        .year-2023 { top: 50%; }
+        .year-2022 { top: 80%; }
+
+        .job_info {
+            display: flex;
+            gap: 0.5rem;
+            align-items: baseline;
+        }
+
+        .job_location {
+            font-size: 0.8rem;
+            color: gray;
+        }
+
+        .job_date {
+            color: gray;
+            font-size: 0.7rem;
+        }
+
+        :target {
+            scroll-margin-top: 90px;
+        }
+    </style>
+
+    <script>
+        function openAccordion(id) {
+            const workAccordion = document.getElementById('work_experience');
+            const projectsAccordion = document.getElementById('projects');
+            projectsAccordion.open = false;
+            workAccordion.open = false;
+            if (id !== "") {
+                const targetAccordion = document.getElementById(id);
+                targetAccordion.open = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav style="position: sticky;top: 0; background-color:#48536B;border-radius: 1rem;padding:0rem 2rem; margin:2rem;" id="nav_bar">
+        <ul>
+            <li><a href="#"><img src="./assets/img/monogram-test.png" style="max-width: 8rem;"></a></li>
+
+        </ul>
+        <ul>
+            <li></li>
+            <li><a class="contrast" href="#work_experience" onclick="openAccordion('work_experience')">Work experience</a></li>
+            <li><a class="contrast" href="#projects" onclick="openAccordion('projects')">Projects</a></li>
+            <li><a class="contrast" href="./assets/resume.pdf" target="_blank">My resumé</a></li>
+            <li><a class="contrast" href="#contact" onclick="openAccordion('')" >Contact</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <header class="grid" style="margin-bottom: 2rem;">
+            <hgroup style="margin-top: 2rem;">
+                <h5>Hey there! I'm</h5>
+                <h1 style="margin: 1rem;"><kbd>Breno Faria</kbd></h1>
+                <p>I'm a software developer passionate about making things work behind the scenes! </p> <br>
+
+                <p>I love building scalable solutions to non-existing problems, ideally using a tool I have no prior experience 
+                    with which usually results in 3x as much work, 5x as much debugging and 10x as much fun!</p>
+                    
+                <br>
+                <p></p>
+            </hgroup>
+            <div>
+                <img src="./assets/img/costco_card_front.jpeg">
+            </div>
+            
+        </header>
+
+        <hr>
+
+        <section style="margin-bottom: 2rem;">
+            <h2>About Me</h2>
+            <p>I started my programming journey back in high school. Initially drawn by its never-ending JavaScript frameworks,
+                 I quickly realized that my true passion was in the backend - far away from dynamically typed languages.
+            </p>
+            <p>Since then I worked on several side projects, internships and many more! I have a personal preference for creating and maintaining
+                 APIs and manipulating data, but I've gained experience across the board, including full-stack software development,
+                 containerization services, security and access control, and more.
+            </p>
+            <p>If you want a more detailed and technical list of my skillset and experiences, check out my <a href="resume.html">resumé!</a></p>
+            <br><p>My current goal has been to become more proficient with Golang! C-like syntax with automatic garbage collection? <img src="./assets/img/sign_me_up.png" style="max-width: 10rem;margin-left: 30%;"></p>
+        </section>
+
+
+        <details id="work_experience" style="margin-bottom: 2rem;">
+            <summary><h2>Work experience</h2></summary>
+            <section style="display:flex;gap:2rem">
+                <div class="timeline-container">
+                    <div class="year-marker year-2024">2024</div>
+                    <div class="year-marker year-2023">2023</div>
+                    <div class="year-marker year-2022">2022</div>
+                </div>
+    
+                <div>
+                    <article class="grid">
+                        <div>
+                            <div>
+                                <h4 style="margin-bottom: 0;">Software developer intern</h4>
+                                <span class="job_info">
+                                    <h6>@ Flexspring</h6>
+                                    <p class="job_location">Boston, MA</p>
+                                </span>
+                                <p class="job_date">Sep 2024 – Dec 2024</p>
+                            </div>
+                            <p>▶ Tackled production-level bugs and improvements in existing <b>Java</b> services, as well as implemented new features on
+                                the company’s main product, using <b>Jira</b> to track and manage development tasks</p>
+    
+                            <p>▶ Worked within <b>SCRUM</b> methodology, using <b>Git</b> for version control and <b>GitBucket</b> for repository management</p>
+    
+                            <p>▶ Refactored code to simplify logic, optimize performance, and eliminate unused legacy code, improving efficiency
+                                and maintainability</p>
+                        </div>
+                        <div style="display:flex;align-items: center;justify-content: center;"><img style="border-radius: 10%;" src="./assets/img/flexspring_logo.png" alt="Flexspring logo"></div>
+                    </article>
+    
+                    <article class="grid">
+                        <div>
+                            <div>
+                                <h4 style="margin-bottom: 0;">Director of technology</h4>
+                                <span class="job_info">
+                                    <h6>@ Hackconcordia (University club)</h6>
+                                    <p class="job_location">Montréal, QC</p>
+                                </span>
+                                <p class="job_date">Sep 2024 – Dec 2024</p>
+                            </div>
+                            <p>▶ Participated the development and maintenance of the club’s website and registration platform</p>
+    
+                            <p>▶ Contributed to the [backend] software development and maintenance of several projects within the club</p>
+    
+                            <p>▶ Main technologies used: TypeScript, MongoDB, Express JS</p>
+                        </div>
+                        <div style="display:flex;align-items: center;justify-content: center;"><img style="border-radius: 10%;" src="./assets/img/hackconcordia_logo.png" alt="Hackconcordia logo"></div>
+                    </article>
+    
+    
+                    <article class="grid">
+                        <div>
+                            <div>
+                                <h4 style="margin-bottom: 0;">Math tutor</h4>
+                                <span class="job_info">
+                                    <h6>@ Concordia University</h6>
+                                    <p class="job_location">Montréal, QC</p>
+                                </span>
+                                <p class="job_date">Sep 2024 – Dec 2024</p>
+                            </div>
+                            <p>▶ Worked in the university's math department, providing one on one tutoring and organizing Exam Prep
+                                (comprehensive review) sessions</p>
+    
+                            <p>▶ Gauged students' level and needs in order to provide personalized advice and explain the content in a clear and
+                                concise way</p>
+    
+                            <p>▶ Tutored several math courses, such as Linear Algebra, Calculus I, Calculus II, etc.</p>
+                        </div>
+                        <div style="display:flex;align-items: center;justify-content: center;"><img style="max-width: 70%;" src="./assets/img/concordia_logo.png" alt="Concordia University logo"></div>
+                    </article>
+    
+                    <article class="grid">
+                        <div>
+                            <div>
+                                <h4 style="margin-bottom: 0;">Software developer intern</h4>
+                                <span class="job_info">
+                                    <h6>@ Federal Highway Police (Brazil)</h6>
+                                    <p class="job_location">Brasília, DF</p>
+                                </span>
+                                <p class="job_date">Sep 2024 – Dec 2024</p>
+                            </div>
+                            <p>▶ Designed and implemented data aggregation tools with <b>Python</b> and <b>PostgreSQL</b> that were used on a federal scale,
+                                improving efficiency country-wide by over 10%</p>
+    
+                            <p>▶ Developed several automation scripts, browser extensions and small-scale applications using <b>JavaScript</b>, reducing
+                                the time spent on routine tasks by half</p>
+    
+                            <p>▶ Realized the implementation of new tools in different departments, as well as assisting them with software and
+                                computed related problems</p>
+                        </div>
+                        <div style="display:flex;align-items: center;justify-content: center;"><img style="max-width: 70%;" src="./assets/img/prf_logo.png" alt="Federal Highway Police logo"></div>
+                    </article>
+    
+                </div>
+    
+            </section>
+        </details>
+
+        <details id="projects" style="margin-bottom: 2rem;">
+            <summary><h2>Projects</h2></summary>
+            <section>
+                <article class="grid">
+                    <div>
+                        <h4>Open-ed</h4>
+                        <p>description</p>
+                    </div>
+                    <h2>image here</h2>
+                </article>
+        
+                <article class="grid">
+                    <div>
+                        <h4>u-there</h4>
+                        <p>description</p>
+                    </div>
+                    <h2>image here</h2>
+                </article>
+        
+                <article class="grid">
+                    <div>
+                        <h4>Snappy</h4>
+                        <p>description</p>
+                    </div>
+                    <h2>image here</h2>
+                </article>
+        
+                <article class="grid">
+                    <div>
+                        <h4>LcMentions</h4>
+                        <p>description</p>
+                    </div>
+                    <h2>image here</h2>
+                </article>
+        
+                <article class="grid">
+                    <div>
+                        <h4>Open-ed</h4>
+                        <p>description</p>
+                    </div>
+                    <h2>image here</h2>
+                </article>
+        
+            </section>
+        </details>
+        
+
+    <footer style="margin-bottom: 2rem;">
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Reach me at +1 (438) 531-7117 | <a class="contrast" href="mailto:mail@brenofaria.com">mail@brenofaria.com</a>
+             | <a class="contrast" href="https://www.linkedin.com/in/brenofaria/">linkedin.com/in/brenofaria/</a> | 
+             <a class="contrast" href="https://github.com/breno-faria">github.com/breno-faria</a> </p>
+        </section>
+    </footer>
+    </main>
+</body>
+</html>
