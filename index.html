@@ -60,23 +60,23 @@
         .year-2023 { top: 50%; }
         .year-2022 { top: 80%; }
 
-        .job_info {
+        .job-info {
             display: flex;
             gap: 0.5rem;
             align-items: baseline;
         }
 
-        .job_location {
+        .job-location {
             font-size: 0.8rem;
             color: gray;
         }
 
-        .job_date {
+        .job-date {
             color: gray;
             font-size: 0.7rem;
         }
 
-        #nav_bar {
+        #nav-bar {
             position: sticky;
             top: 0;
             background-color:#48536B;
@@ -89,7 +89,7 @@
         }
 
         @media (max-width: 768px) {
-            #nav_bar {
+            #nav-bar {
                 display: none;
             }
         }
@@ -129,7 +129,7 @@
     </script>
 </head>
 <body>
-    <nav id="nav_bar">
+    <nav id="nav-bar">
         <ul>
             <li><a href="#"><img src="./assets/img/monogram-test.png" style="max-width: 4rem;"></a></li>
         </ul>
@@ -212,11 +212,11 @@
                         <div>
                             <div>
                                 <h4 style="margin-bottom: 0;">Software developer intern</h4>
-                                <span class="job_info">
+                                <span class="job-info">
                                     <h6>@ Flexspring</h6>
-                                    <p class="job_location">Boston, MA</p>
+                                    <p class="job-location">Boston, MA</p>
                                 </span>
-                                <p class="job_date">Sep 2024 – Dec 2024</p>
+                                <p class="job-date">Sep 2024 – Dec 2024</p>
                             </div>
                             <p>▶ Tackled production-level bugs and improvements in existing <b>Java</b> services, as well as implemented new features on
                                 the company’s main product, using <b>Jira</b> to track and manage development tasks</p>
@@ -233,11 +233,11 @@
                         <div>
                             <div>
                                 <h4 style="margin-bottom: 0;">Director of technology</h4>
-                                <span class="job_info">
+                                <span class="job-info">
                                     <h6>@ Hackconcordia (University club)</h6>
-                                    <p class="job_location">Montréal, QC</p>
+                                    <p class="job-location">Montréal, QC</p>
                                 </span>
-                                <p class="job_date">Sep 2024 – Dec 2024</p>
+                                <p class="job-date">Sep 2024 – Dec 2024</p>
                             </div>
                             <p>▶ Participated the development and maintenance of the club’s website and registration platform</p>
     
@@ -253,11 +253,11 @@
                         <div>
                             <div>
                                 <h4 style="margin-bottom: 0;">Math tutor</h4>
-                                <span class="job_info">
+                                <span class="job-info">
                                     <h6>@ Concordia University</h6>
-                                    <p class="job_location">Montréal, QC</p>
+                                    <p class="job-location">Montréal, QC</p>
                                 </span>
-                                <p class="job_date">Sep 2024 – Dec 2024</p>
+                                <p class="job-date">Sep 2024 – Dec 2024</p>
                             </div>
                             <p>▶ Worked in the university's math department, providing one on one tutoring and organizing Exam Prep
                                 (comprehensive review) sessions</p>
@@ -274,11 +274,11 @@
                         <div>
                             <div>
                                 <h4 style="margin-bottom: 0;">Software developer intern</h4>
-                                <span class="job_info">
+                                <span class="job-info">
                                     <h6>@ Federal Highway Police (Brazil)</h6>
-                                    <p class="job_location">Brasília, DF</p>
+                                    <p class="job-location">Brasília, DF</p>
                                 </span>
-                                <p class="job_date">Sep 2024 – Dec 2024</p>
+                                <p class="job-date">Sep 2024 – Dec 2024</p>
                             </div>
                             <p>▶ Designed and implemented data aggregation tools with <b>Python</b> and <b>PostgreSQL</b> that were used on a federal scale,
                                 improving efficiency country-wide by over 10%</p>
@@ -360,12 +360,12 @@
             const targetAccordion = document.getElementById(id);
             targetAccordion.open = true;
         }
-        const navBar = document.getElementById("nav_bar");
+        const navBar = document.getElementById("nav-bar");
         navBar.style.transform = "translateY(-150%)";
     }
 
     let lastScrollY = window.scrollY;
-    const navBar = document.getElementById("nav_bar");
+    const navBar = document.getElementById("nav-bar");
 
     window.addEventListener("scroll", () => {
         if (window.scrollY > lastScrollY) {
