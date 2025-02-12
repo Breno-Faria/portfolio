@@ -144,6 +144,13 @@
             margin-right: 2rem;
         }
 
+        #headshot {
+            max-height: 22rem;
+            margin-top:auto;
+            margin-left:auto;
+            border-radius: 10%;
+        }
+
         @media (min-width: 768px) {
             #mobile-socials {
                 display: none;
@@ -160,7 +167,13 @@
                 align-items: center;
                 justify-content: center;
             }
+
+            #headshot {
+                margin-left: 3rem;
+            }
         }
+
+        
     </style>
 
     <script>
@@ -209,7 +222,7 @@
                     with, which usually results in 3x as much work, 5x as much debugging and 10x as much fun!</p>
                 <br>
             </div>
-            <img src="./assets/img/headshot.png" style="max-height: 22rem;margin-top:auto;margin-left:auto;border-radius: 10%;">
+            <img id="headshot" src="./assets/img/headshot.png">
         </header>
 
         <hr>
