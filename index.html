@@ -54,55 +54,56 @@
             <div style="margin-top: 2rem;">
                 <h5>👋 Hello! I'm</h5>
                 <h1 style="margin: 1rem;"><kbd>Breno Faria</kbd></h1>
-                <p>I'm a software developer passionate about making things work behind the scenes, building elegant infrastructure and solving complex problems at scale.</p> <br>
+                
+                <p>
+                    I'm a software developer focused on backend systems and infrastructure, with experience 
+                    building scalable software at Amazon and Autodesk.
+                </p>
 
-                <p>Currently, I'm especially interested in backend systems, distributed infrastructure, and the intersection 
-                    of code and finance — from APIs and self-hosted tools to the algorithms behind markets and decisions. </p><br>
+                <p>
+                    I love solving problems involving performance
+                     and real-world complexity, leveraging clean abstractions and low-level control to build software
+                      that is fast, maintainable, and reliable.
+                </p>
+
+                <p>For a detailed and technical overview of my skills and experience, check out my 
+                <a class="link" href="./resume.pdf" target="_blank" style="background-color: #007bff;padding: 0.3rem;border-radius: 0.5rem;">resume</a> or just scroll down!</p>
             </div>
             <img id="headshot" src="./assets/img/headshot.png">
         </header>
 
         <hr>
 
-        <section style="margin-bottom: 2rem;" id="about_me">
-            <h2>About Me</h2>
-            <p>
-                I'm a software developer with experience building scalable systems at Amazon and a strong focus on 
-                backend architecture, infrastructure, and performance. 
-                I love solving problems that involve massive scale, high stakes and real-world complexity,
-                leveraging clean abstractions and low-level control to build systems that are fast and reliable.
-            </p>
-            <p>
-                Over the past few years, I've worked across startups, government, and large-scale businesses
-                 — from streamlining production APIs to self-hosting containerized systems from scratch. Whether
-                  debugging microservices in Java, optimizing backend performance in Go, or writing automation scripts in
-                   Bash, I've gravitated toward roles where clean architecture and real impact intersect. I'm especially drawn
-                    to domains like finance and infrastructure, where speed, clarity, and correctness are crucial.
-            </p>
-
-            <p>
-                I'm currently looking for opportunities that challenge me to apply what
-                 I've learned so far while pushing into new domains. Whether in finance or big tech,
-                  I want to work on systems that matter — where I can keep learning, contribute meaningfully,
-                   and grow alongside sharp people solving hard problems.
-            </p>
-
-            <br>
-            <p>For a detailed and technical overview of my skills and experience, check out my 
-                <a class="link" href="./resume.pdf" target="_blank" style="background-color: #007bff;padding: 0.3rem;border-radius: 0.5rem;">resume</a> or just scroll down!</p>
-        </section>
-
 
         <details id="work_experience" style="margin-bottom: 2rem;">
             <summary><h2>Work experience</h2></summary>
             <section style="display:flex;gap:2rem">
                 <div class="timeline-container">
+                    <div class="year-marker year-2026">2026</div>
                     <div class="year-marker year-2025">2025</div>
                     <div class="year-marker year-2024">2024</div>
                     <div class="year-marker year-2023">2023</div>
                 </div>
     
                 <div>
+                    <article class="grid">
+                        <div>
+                            <div>
+                                <h4 style="margin-bottom: 0;">Backend Software Development Intern</h4>
+                                <span class="job-info">
+                                    <h6>@ Autodesk</h6>
+                                    <p class="job-location">Montréal, QC</p>
+                                </span>
+                                <p class="job-date">Jan 2026 – May 2026</p>
+                            </div>
+                            <p>▶ Built concurrent Java services using virtual threads and gRPC to run synthetic health checks against a petabyte-scale distributed NoSQL platform, validating indexing correctness and data availability</p>
+                            <p>▶ Designed high-throughput validation and monitoring pipelines to benchmark indexing latency, verify record propagation, and trigger alerts, using IaC for consistent deployment across multiple production regions</p>
+                            <p>▶ Refactored and optimized existing AWS Lambda services and deployed new serverless workflows, reducing average execution time from 60+ seconds to ~15 seconds</p>
+                            <p>▶ Improved observability and system performance by reducing cross-regional latency by 170ms, decreasing test flakiness, and enabling low-friction rollout to new regions</p>
+                        </div>
+                        <div style="display:flex;align-items: center;justify-content: center;"><img style="max-width: 10rem;border-radius: 10%;" src="./assets/img/autodesk_logo.png" alt="Autodesk logo"></div>
+                    </article>
+
                     <article class="grid">
                         <div>
                             <div>
@@ -117,9 +118,9 @@
                             <p>▶ Architected parent-child indexing in OpenSearch and refactored ingestion pipelines (AWS Lambda) to support new data models and session metadata with high consistency</p>
                             <p>▶ Integrated GraphQL APIs with distributed services to enable faceted search, reducing query latency at scale</p>
                             <p>▶ Wrote comprehensive unit/integration tests and performance benchmarks to support rollout</p>
-                            <p>▶  Delivered a robust, low-latency search solution adopted by multiple internal organizations across Amazon</p>
+                            <p>▶ Delivered a robust, low-latency search solution adopted by multiple internal organizations across Amazon</p>
                         </div>
-                        <div style="display:flex;align-items: center;justify-content: center;"><img style="max-width: 10rem;border-radius: 10%;" src="./assets/img/amazon_logo.png" alt="OneSpan logo"></div>
+                        <div style="display:flex;align-items: center;justify-content: center;"><img style="max-width: 10rem;border-radius: 10%;" src="./assets/img/amazon_logo.png" alt="Amazon logo"></div>
                     </article>
 
                     <article class="grid">
@@ -132,10 +133,9 @@
                                 </span>
                                 <p class="job-date">Sep 2024 – Dec 2024</p>
                             </div>
-                            <p>▶ Tackled production bugs and implemented features in Java-based microservices, using Jira for task trackings</p>
-        
-                            <p>▶ Refactored code to simplify logic, optimize performance, and eliminate unused legacy code, improving efficiency
-                                and maintainability</p>
+                            <p>▶ Tackled production bugs and implemented features in Java-based microservices</p>
+                            <p>▶ Optimized query efficiency by moving filtering logic to the backend, eliminating ~20,000 unnecessary queries per day, significantly improving page load times, and reducing strain on DB services</p>
+                            <p>▶ Refactored a large portion of HTTP request handling and legacy code, streamlining API interactions, reducing redundant calls, and improving maintainability and performance</p>
                         </div>
                         <div style="display:flex;align-items: center;justify-content: center;"><img style="border-radius: 10%;max-width: 10rem;" src="./assets/img/flexspring_logo.png" alt="Flexspring logo"></div>
                     </article>
@@ -145,15 +145,13 @@
                             <div>
                                 <h4 style="margin-bottom: 0;">Director of technology</h4>
                                 <span class="job-info">
-                                    <h6>@ Hackconcordia (University club)</h6>
+                                    <h6>@ HackConcordia (University club)</h6>
                                     <p class="job-location">Montréal, QC</p>
                                 </span>
                                 <p class="job-date">May 2024 – Dec 2024</p>
                             </div>
-                            <p>▶ Participated the development and maintenance of the club's website and registration platform</p>
-    
+                            <p>▶ Participated in the development and maintenance of the club's website and registration platform</p>    
                             <p>▶ Contributed to the [backend] software development and maintenance of several projects within the club</p>
-    
                             <p>▶ Main technologies used: TypeScript, MongoDB, Express JS</p>
                         </div>
                         <div style="display:flex;align-items: center;justify-content: center;"><img style="border-radius: 10%;" src="./assets/img/hackconcordia_logo.png" alt="Hackconcordia logo"></div>
@@ -172,10 +170,8 @@
                             </div>
                             <p>▶ Worked in the university's math department, providing one on one tutoring and organizing Exam Prep
                                 (comprehensive review) sessions</p>
-    
                             <p>▶ Gauged students' level and needs in order to provide personalized advice and explain the content in a clear and
                                 concise way</p>
-    
                             <p>▶ Tutored several math courses, such as Linear Algebra, Calculus I, Calculus II, etc.</p>
                         </div>
                         <div style="display:flex;align-items: center;justify-content: center;"><img style="max-width: 15rem;" src="./assets/img/concordia_logo.png" alt="Concordia University logo"></div>
@@ -213,10 +209,8 @@
                 <article class="grid">
                     <div>
                         <h4>Open-ed</h4>
-                        <p>Math learning platform where users can find a complete series of videos for university-level introductory math courses.
-                             Leveraged my tutoring experience to record the lectures aligned with the content covered by the University
-                              equiping students with the tools they need to succeed, and built the website so they can be accessed for free, 
-                               hosting the videos on a home server
+                        <p>
+                            Designed and implemented the backend of a learning platform, with Golang APIs for video streaming, content metadata storage, user authentication, and progress tracking. Self-hosted it leveraging NGINX as a reverse proxy and containerized services with Docker.
                         </p>
                     </div>
                     <div class ="grid" style="place-items: center;">
@@ -250,7 +244,7 @@
                     <div>
                         <h4>u-there</h4>
                         <p>Downloadable communication tool with user authentication, groups creation, in-app chat, public activity status,
-                            dashboard to navigate between groups and link other social medias to profile</p>
+                            dashboard to navigate between groups and link other social media profiles</p>
                     </div>
                     <div class ="grid" style="place-items: center;">
                         <hgroup class="project-details">
@@ -324,7 +318,7 @@
                     <div class ="grid" style="place-items: center;">
                         <hgroup class="project-details">
                             <h6>Main learning goals:</h6>
-                            <p>▶ Get more familiar wrapping API's into an intuitive, user-friendly website</p>
+                            <p>▶ Get more familiar wrapping APIs into an intuitive, user-friendly website</p>
                             <p>▶ Learning how to efficiently feed data from a SQL database to a frontend website</p>
                             <p>▶ Write automation scripts with Bash</p>
                             <p style="font-size: 0.6rem;">Main programming language: Python</p>
@@ -353,7 +347,7 @@
                 <article class="grid">
                     <div>
                         <h4>Snappy</h4>
-                        <p>Collaborated with other developers to build a platform where generative AI was used to give the user financial insights. I built the API used on the website, using Plaid to get secure access to the user's financial data in order to 
+                        <p>Collaborated with other developers to build a platform where generative AI was used to give the user financial insights. I built the API used by the website, using Plaid to get secure access to the user's financial data in order to 
                              provide a personalized experience. This was a mock project built during a hackathon.
                         </p>
                     </div>
@@ -361,7 +355,7 @@
                         <hgroup class="project-details">
                             <h6>Main learning goals:</h6>
                             <p>▶ Interacting with a pre-existing API using Go and using it to serve my application</p>
-                            <p>▶ Get familiar with using Go for data manipulation</p>
+                            <p>▶ Getting familiar with using Go for data manipulation</p>
                             <p style="font-size: 0.6rem;">Main programming language: Golang</p>
                         </hgroup>
                         <div style="width: 100%;">
